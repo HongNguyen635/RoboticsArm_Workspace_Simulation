@@ -16,7 +16,9 @@ https://github.com/HongNguyen635/RoboticsArm_Workspace_Simulation/assets/7391577
 
 ## Precision
 
-Depending on how "precise" or "close" you want your points to be. But more points don't always mean better visualization. Increasing the precision slows calculation time since possible configurations are calculated using permutation. Additionally, it can cluster your 3D graph.
+Depending on how "precise" or "close" you want your points to be. But more points don't always mean better visualization. Increasing the precision slows calculation time since possible configurations are calculated using permutation. Additionally, too high precision can cluster your 3D graph. 
+
+For each graph below, notice that less precision = less dense. But the reachable points are sparse and it is difficult to visualize the reachable positions. Since the alpha of each scattet point is set to 0.1, the transparency of a point indicate the frequency of that point being reached. A solid point mean that it has been reached multiple times. Likewise, a almost-transparent point shows that the arm only reaches it once or twice.
 
 Example of a **precision = 3** plot:
 ![3_precision_plot](https://github.com/HongNguyen635/RoboticsArm_Workspace_Simulation/assets/73915779/a440884b-f8c4-4189-a7f3-b09f8807ac0d)
@@ -40,9 +42,7 @@ To use the simulation, a .urdf file of the model is needed.
 
 **Class EndEffectorSim**: run the simulation. Each joint has a certain joint limit defined in the .urdf file. Based on that, **permutation** is used to generate a list of all possible joint positions (given a certain precision). Then, **forward kinematics** is used to calculate the end effector position.
 
-**Note:**
-
-Depending on the input precision, the distance between points would be sparse or dense. For example, for a joint limit between 0 and pi radian, if the precision is 3, 3 points will be generated inclusively (e.g. 0, 0.5 pi, and pi). Of course the more precision, the better. But since joints' position need to be in a specific order, **permutation** is used. Thus, **more precision = slower run time**.
+**Note:** Depending on the input precision, the distance between points would be sparse or dense. For example, for a joint limit between 0 and pi radian, if the precision is 3, 3 points will be generated inclusively (e.g. 0, 0.5 pi, and pi). Of course the more precision, the better. But since joints' position need to be in a specific order, **permutation** is used. Thus, **more precision = slower run time**.
 
 ## Dependencies
 
