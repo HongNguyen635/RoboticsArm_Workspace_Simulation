@@ -18,7 +18,7 @@ https://github.com/HongNguyen635/RoboticsArm_Workspace_Simulation/assets/7391577
 
 Depending on how "precise" or "close" you want your points to be. But more points don't always mean better visualization. Increasing the precision slows calculation time since possible configurations are calculated using permutation. Additionally, too high precision can cluster your 3D graph. 
 
-For each graph below, notice that less precision = less dense. But the reachable points are sparse and it is difficult to visualize the reachable positions. Since the alpha of each scattet point is set to 0.1, the transparency of a point indicate the frequency of that point being reached. A solid point mean that it has been reached multiple times. Likewise, a almost-transparent point shows that the arm only reaches it once or twice.
+For each graph below, notice that less precision = less dense. But the reachable points are sparse and it is difficult to visualize the reachable positions. Since the alpha of each scatter point is set to 0.1, the transparency of a point indicates the frequency of that point being reached. A solid point means that it has been reached multiple times. Likewise, an almost-transparent point shows that the arm only reaches it once or twice.
 
 Example of a **precision = 3** plot:
 ![3_precision_plot](https://github.com/HongNguyen635/RoboticsArm_Workspace_Simulation/assets/73915779/a440884b-f8c4-4189-a7f3-b09f8807ac0d)
