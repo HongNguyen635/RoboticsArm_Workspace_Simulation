@@ -19,16 +19,16 @@ https://github.com/HongNguyen635/RoboticsArm_Workspace_Simulation/assets/7391577
 Depending on how "precise" or "close" you want your points to be. But more points don't always mean better visualization. Increasing the precision slows calculation time since possible configurations are calculated using permutation. Additionally, it can cluster your 3D graph.
 
 Example of a **precision = 3** plot:
-![3_precision_plot](https://github.com/HongNguyen635/RoboticsArm_Workspace_Simulation/assets/73915779/00cd1177-4664-408e-abcf-c58e7bab3ce8 | width=100)
+<img src="[https://github.com/favicon.ico](https://github.com/HongNguyen635/RoboticsArm_Workspace_Simulation/assets/73915779/00cd1177-4664-408e-abcf-c58e7bab3ce8)" width="100">
 
 Example of a **precision = 4** plot:
-![4_precision_plot](https://github.com/HongNguyen635/RoboticsArm_Workspace_Simulation/assets/73915779/0261bbe4-3e67-4c37-8b65-01bdb02e9548 | width=100)
+<img src="[https://github.com/favicon.ico](https://github.com/HongNguyen635/RoboticsArm_Workspace_Simulation/assets/73915779/0261bbe4-3e67-4c37-8b65-01bdb02e9548)" width="100">
 
 Example of a **precision = 5** plot:
-![5_precision_plot](https://github.com/HongNguyen635/RoboticsArm_Workspace_Simulation/assets/73915779/df7cd419-6fee-4707-a918-67b3d9f7088a | width=100)
+<img src="[https://github.com/favicon.ico](https://github.com/HongNguyen635/RoboticsArm_Workspace_Simulation/assets/73915779/df7cd419-6fee-4707-a918-67b3d9f7088a)" width="100">
 
 Example of a **precision = 6** plot:
-![6_precision_plot](https://github.com/HongNguyen635/RoboticsArm_Workspace_Simulation/assets/73915779/83cebd5e-1a74-4b7d-aa04-967221c74f1c | width=100)
+<img src="[https://github.com/favicon.ico](https://github.com/HongNguyen635/RoboticsArm_Workspace_Simulation/assets/73915779/83cebd5e-1a74-4b7d-aa04-967221c74f1c)" width="100">
 
 # How to Use
 
