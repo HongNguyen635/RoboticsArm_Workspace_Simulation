@@ -14,8 +14,6 @@ import pybullet
 import pybullet_data
 import numpy as np
 
-# plot the workspace of the arm as a scatter plot
-
 
 class Graph:
     """Display a 3D graph of all reachable points with input figure
@@ -211,7 +209,6 @@ class EndEffectorSim:
         return all_positional_configurations
 
     # update the plot as well as the model
-
     def run_simulation(self, all_positional_configurations):
         """Start the simulation with all the joint positions
         The plot will be updated in real-time.
@@ -245,7 +242,6 @@ class EndEffectorSim:
             self.graph.update_graph(end_effector_position)
 
     # plot all points with the model, no real-time running
-
     def show_workspace(self, all_positional_configurations):
         """Plot all reachable points in 3D space. No real-time running
 
