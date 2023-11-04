@@ -34,14 +34,24 @@ Example of a **precision = 6** plot:
 
 To use the simulation, a .urdf file of the model is needed. 
 
+## Brief description
+
+**Class Graph**: Display a 3D graph of all reachable points with the input figure and scatter points.
+
+**Class EndEffectorSim**: run the simulation. Each joint has a certain joint limit defined in the .urdf file. Based on that, **permutation** is used to generate a list of all possible joint positions (given a certain precision). Then, **forward kinematics** is used to calculate the end effector position.
+
+**Note:**
+
+Depending on the input precision, the distance between points would be sparse or dense. For example, for a joint limit between 0 and pi radian, if the precision is 3, 3 points will be generated inclusively (e.g. 0, 0.5 pi, and pi). Of course the more precision, the better. But since joints' position need to be in a specific order, **permutation** is used. Thus, **more precision = slower run time**.
+
+## Dependencies
+
 This project utilizes the IKPY library, to understand more about IKPY and its terminology, see [ikpy](https://github.com/Phylliade/ikpy).
 
 Additionally, PyBullet was included to help with the simulation. See [PyBullet documentation](https://pybullet.org/wordpress/index.php/forum-2/).
-
-Depending on the input precision, the distance between points would be sparse or dense. For example, for a joint limit between 0 and pi radian, if the precision is 3, 3 points will be generated inclusively (e.g. 0, 0.5 pi, and pi). Of course the more precision, the better. But since joints' position need to be in a specific order, **permutation** is used. Thus, **more precision = slower run time**.
 
 # Credits
 
 The arm.urdf is an example arm that belongs to the [TrickFire Robotics Club](https://www.trickfirerobotics.org/)
 
-This file is only for testing purposes.
+This arm.urdf file is only for testing purposes.
